@@ -1,0 +1,488 @@
+
+/* 1. Pengaturan umum */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: "Nunito", Arial, sans-serif;
+    color: #44352E;
+    line-height: 1.6;
+    background-color: #FAF5EF;
+}
+
+
+/* 2. Header dan menu */
+
+header {
+    background: linear-gradient(135deg, #493126, #79543D);
+    color: white;
+    text-align: center;
+    padding: 32px 16px;
+    box-shadow: 0 4px 12px rgba(73, 49, 38, 0.15);
+}
+
+header h1 {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+header p {
+    color: #F5E6D7;
+    font-size: 14px;
+}
+
+nav {
+    margin-top: 16px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    margin: 0 12px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #E5B98B;
+    text-decoration: underline;
+    transform: scale(1.08);
+    display: inline-block;
+}
+
+
+/* 3. Isi halaman */
+
+main {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 16px;
+}
+
+section {
+    background-color: #FFFFFF;
+    border: 1px solid #E8D8C8;
+    border-radius: 12px;
+    padding: 24px;
+    margin: 24px 0;
+    box-shadow: 0 4px 14px rgba(73, 49, 38, 0.07);
+    transition: 0.3s ease;
+}
+
+section:hover {
+    box-shadow: 0 6px 18px rgba(73, 49, 38, 0.12);
+}
+
+h2 {
+    font-family: "Poppins", sans-serif;
+    color: #493126;
+    border-bottom: 3px solid #C99A6B;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-family: "Poppins", sans-serif;
+    color: #79543D;
+    margin-top: 24px;
+}
+
+section p {
+    font-size: 14px;
+    color: #66534A;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+
+/* Ukuran gambar Tentang Kami */
+
+.gambar-tentang {
+    width: 380px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(73, 49, 38, 0.15);
+    transition: 0.3s;
+}
+
+.gambar-tentang:hover {
+    transform: scale(1.02);
+}
+
+
+/* Daftar Tentang Kami */
+
+ul, ol {
+    padding-left: 25px;
+}
+
+li {
+    padding: 4px 0;
+    font-size: 14px;
+}
+
+li::marker {
+    color: #C18D60;
+}
+
+
+/* 4. Tabel */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 16px 0 24px;
+    border: 1px solid #DCC9B8;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.tabel-produk {
+    box-shadow: 0 4px 12px rgba(73, 49, 38, 0.08);
+}
+
+
+/* Garis tabel */
+
+th, td {
+    border: 1px solid #DCC9B8;
+    padding: 10px;
+    text-align: left;
+    vertical-align: middle;
+}
+
+th {
+    background-color: #79543D;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+
+/* Warna baris tabel */
+
+.tabel-produk tbody tr {
+    background-color: #FFFFFF;
+    transition: 0.3s;
+}
+
+.tabel-produk tbody tr:nth-child(even) {
+    background-color: #FAF5EF;
+}
+
+.tabel-produk tbody tr:hover {
+    background-color: #F0E2D5;
+}
+
+
+/* Ukuran gambar produk */
+
+.tabel-produk .gambar-produk {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    display: block;
+    margin: auto;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.tabel-produk .gambar-produk:hover {
+    transform: scale(1.07);
+}
+
+
+/* Pengaturan kolom tabel */
+
+.tabel-produk th,
+.tabel-produk td {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.tabel-produk th:first-child,
+.tabel-produk td:first-child {
+    width: 8%;
+}
+
+.tabel-produk th:nth-child(2),
+.tabel-produk td:nth-child(2) {
+    width: 22%;
+}
+
+.tabel-produk th:last-child,
+.tabel-produk td:last-child {
+    width: 20%;
+}
+
+
+/* Harga produk */
+
+.tabel-produk td:last-child {
+    color: #79543D;
+    font-weight: 700;
+}
+
+
+/* 5. Form */
+
+form {
+    background-color: #FAF5EF;
+    border: 1px solid #E8D8C8;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 15px;
+}
+
+form label {
+    color: #493126;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #DCC9B8;
+    border-radius: 6px;
+    font-family: "Nunito", sans-serif;
+    font-size: 14px;
+    color: #44352E;
+    background-color: white;
+    outline: none;
+    transition: 0.3s;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #C18D60;
+    box-shadow: 0 0 0 3px rgba(193, 141, 96, 0.15);
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    background-color: #493126;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 12px 24px;
+    font-family: "Nunito", sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #C18D60;
+    transform: translateY(-2px);
+}
+
+
+/* 6. Tombol WhatsApp */
+
+.tombol-wa {
+    display: inline-block;
+    background-color: #C18D60;
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 30px;
+    box-shadow: 0 3px 8px rgba(73, 49, 38, 0.12);
+    transition: 0.3s;
+}
+
+.tombol-wa:hover {
+    background-color: #493126;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(73, 49, 38, 0.2);
+}
+
+
+/* 7. Footer */
+
+footer {
+    background-color: #493126;
+    color: #FAF5EF;
+    text-align: center;
+    padding: 20px 16px;
+    margin-top: 35px;
+}
+
+footer p {
+    font-size: 13px;
+    margin: 4px 0;
+}
+
+
+/* 8. Tampilan layar HP */
+
+@media (max-width: 600px) {
+
+    header h1 {
+        font-size: 32px;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    section {
+        padding: 16px;
+    }
+
+    .gambar-tentang {
+        width: 300px;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .tabel-produk .gambar-produk {
+        width: 80px;
+        height: 80px;
+    }
+
+    th, td {
+        padding: 6px;
+        font-size: 12px;
+    }
+
+    /* 9.Harga tetap satu baris di HP */
+
+    .tabel-produk td:last-child {
+        white-space: nowrap;
+        font-size: 11px;
+        padding: 6px 4px;
+    }
+
+    nav a {
+        margin: 0 6px;
+        font-size: 13px;
+    }
+
+    form {
+        padding: 15px;
+    }
+}
+
+/* 10. BAGIAN KONTAK */
+.kontak-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 25px;
+    margin-top: 25px;
+    align-items: stretch;
+}
+
+.info-kontak,
+.form-kontak {
+    background-color: #FAF5EF;
+    border: 1px solid #E8D8C8;
+    border-radius: 12px;
+    padding: 22px;
+}
+
+.info-kontak h3,
+.form-kontak h3 {
+    color: #79543D;
+    margin-top: 0;
+    margin-bottom: 18px;
+}
+
+.info-kontak p {
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.info-kontak .tombol-wa {
+    display: inline-block;
+    margin-top: 5px;
+}
+
+/* 11. FORM PEMESANAN */
+.form-kontak form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-kontak label {
+    font-weight: 600;
+    color: #44352E;
+}
+
+.form-kontak input,
+.form-kontak select,
+.form-kontak textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #E8D8C8;
+    border-radius: 8px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+    box-sizing: border-box;
+    background-color: white;
+}
+
+.form-kontak textarea {
+    resize: vertical;
+}
+
+.form-kontak button {
+    background-color: #C18D60;
+    color: white;
+    border: none;
+    padding: 13px;
+    border-radius: 25px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.form-kontak button:hover {
+    background-color: #493126;
+    transform: translateY(-2px);
+}
+#lokasi {
+    color: #493126;
+    font-size: 22px;
+    border-bottom: 3px solid #C99A6B;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+}
+/* RESPONSIVE */
+@media (max-width: 600px) {
+    .kontak-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .info-kontak,
+    .form-kontak {
+        padding: 18px;
+    }
+}
